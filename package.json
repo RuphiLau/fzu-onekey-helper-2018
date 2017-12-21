@@ -1,0 +1,34 @@
+{
+  "name": "fzu-onekey-helper-2018",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build:dev": "cross-env webpack --progress --profile --colors",
+    "devServer": "cross-env node ./server.js",
+    "dev": "run-p build:dev devServer"
+  },
+  "author": "Ruphi <ruphilau@gmail.com> (https://ruphi.cn/)",
+  "license": "ISC",
+  "devDependencies": {
+    "awesome-typescript-loader": "^3.4.1",
+    "cross-env": "^5.1.1",
+    "html-webpack-plugin": "^2.30.1",
+    "koa-webpack-dev-middleware": "^2.0.2",
+    "koa-webpack-hot-middleware": "^1.0.3",
+    "npm-run-all": "^4.1.2",
+    "opn": "^5.1.0",
+    "source-map-loader": "^0.2.3",
+    "typescript": "^2.6.2",
+    "webpack": "^3.10.0",
+    "webpack-merge": "^4.1.1"
+  },
+  "dependencies": {
+    "@types/react": "^16.0.31",
+    "@types/react-dom": "^16.0.3",
+    "clean-webpack-plugin": "^0.1.17",
+    "config": "^1.28.1",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0"
+  }
+}

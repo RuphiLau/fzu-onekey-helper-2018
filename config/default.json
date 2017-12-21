@@ -1,0 +1,4 @@
+{
+    "port": "5050",
+    "publicPath": "./dist/"
+}

@@ -1,0 +1,15 @@
+{
+    "compilerOptions": {
+        "outDir": "./dist/",
+        "sourceMap": true,
+        "target": "es5",
+        "jsx": "react",
+        "baseUrl": ".",
+        "paths": {
+            "components/*": ["./src/frontend/components/*"]
+        }
+    },
+    "include": [
+        "./src/frontend/**/*"
+    ]
+}
