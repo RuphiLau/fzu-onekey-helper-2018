@@ -31,6 +31,7 @@ if (!isProduction) {
     app.use(require('koa-webpack-dev-middleware')(compiler, {
         noInfo: true
     }))
+    app.use(require('koa-webpack-hot-middleware')(compiler))
 }
 
 app.listen(port)

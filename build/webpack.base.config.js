@@ -8,7 +8,6 @@ const { resolve, join } = require('path')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 
 module.exports = {
-    entry: resolve(__dirname, '../src/frontend/pages/index.tsx'),
     resolve: {
         alias: {
             root: resolve(__dirname, '../src/frontend'),
@@ -23,6 +22,7 @@ module.exports = {
         ]
     },
     plugins: [
+        new webpack.optimize.OccurrenceOrderPlugin(),
         new HtmlWebpackPlugin({
             template: resolve(__dirname, '../src/template/index.html')
         })
